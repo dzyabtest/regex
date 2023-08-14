@@ -1,5 +1,5 @@
-/* eslint-disable indent */
 /* eslint-disable linebreak-style */
+/* eslint-disable indent */
 import Validator from '../app';
 
 test('validate user name 1', () => {

@@ -4,7 +4,9 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const crypto = require('crypto');
 
+// eslint-disable-next-line camelcase
 const crypto_orig_createHash = crypto.createHash;
+// eslint-disable-next-line eqeqeq
 crypto.createHash = (algorithm) => crypto_orig_createHash(algorithm == 'md4' ? 'sha256' : algorithm);
 
 module.exports = {
