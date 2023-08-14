@@ -1,8 +1,7 @@
-
 const path = require('path');
+const crypto = require('crypto');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const crypto = require('crypto');
 
 // eslint-disable-next-line camelcase
 const crypto_orig_createHash = crypto.createHash;
